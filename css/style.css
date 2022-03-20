@@ -1,0 +1,288 @@
+/* Variabel Warna  */
+:root {
+  --primary-clr: dodgerblue;
+  --secondary-clr: blue;
+  --base-clr: black;
+  --alt-clr: white;
+}
+
+/* Kelas Warna Custom */
+.prim-color {
+  background-color: var(--primary-clr);
+}
+
+.text-prim {
+  color: var(--primary-clr);
+}
+
+.sec-color {
+  background-color: var(--secondary-clr);
+}
+
+.base-color {
+  background-color: var(--base-clr);
+}
+
+.text-alt {
+  color: var(--alt-clr);
+}
+
+/* Kelas Lain */
+section {
+  margin-bottom: 3rem;
+  overflow: hidden;
+}
+
+#visited {
+  margin-right: 1rem;
+  color: white;
+  text-decoration: none;
+  margin-bottom: 10px;
+}
+
+.nav-visited {
+  font-weight: bolder;
+  color: var(--primary-clr);
+}
+
+.underline {
+  text-decoration: underline;
+}
+.inline-shadow {
+  border: 2px solid black;
+  box-shadow: inset 1px 1px 8px black;
+}
+
+.jumbotron {
+  background-image: url(../assets/img/texture.jpg);
+  position: relative;
+  background-color: var(--base-clr);
+  background-repeat: no-repeat;
+  height: 640px;
+  overflow: hidden;
+}
+
+.jumbotron-text {
+  top: 9rem;
+  margin: 0 5em 0;
+  max-width: 550px;
+  position: absolute;
+}
+
+.top-text {
+  font-size: 6em;
+  margin: 0px;
+}
+
+.bottom-text {
+  font-size: 3.5em;
+}
+
+.img-hero {
+  position: absolute;
+  width: 65%;
+  left: 35rem;
+  top: 20px;
+}
+
+.img-product {
+  width: 400px;
+  position: absolute;
+  z-index: 999;
+  left: 4rem;
+  bottom: 11rem;
+}
+
+.card-col {
+  position: relative;
+}
+
+.card-body {
+  padding: 6rem 2rem 2rem;
+  border-radius: 25px;
+  margin: 7rem 2rem 0rem;
+}
+
+#card-blog.card-body {
+  margin: 1rem;
+  padding: 0rem;
+}
+
+.card#card-blog {
+  border-radius: 25px;
+  padding-bottom: 2rem;
+  overflow: hidden;
+}
+
+.section#blog,
+.section#about,
+.section#contact,
+.section#footer {
+  padding-left: 2rem;
+  padding-right: 3rem;
+}
+
+.text-title {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.btn {
+  padding: 0.5rem 5rem 0.5rem;
+  color: var(--alt-clr);
+  border-radius: 25px;
+}
+
+.btn:active {
+  color: var(--alt-clr);
+  border-radius: 25px;
+  background-color: var(--secondary-clr);
+  box-shadow: 1px 1px 5px var(--secondary-clr);
+}
+
+.btn-100 {
+  width: 100%;
+}
+
+.price {
+  background-color: var(--primary-clr);
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  border-radius: 50%;
+  bottom: 15rem;
+  z-index: 999;
+  text-align: center;
+  box-shadow: 20px 15px 15px hsla(0, 0%, 0%, 0.5);
+}
+
+.price span {
+  position: absolute;
+  margin-top: 2.3rem;
+  right: 0.6rem;
+  color: var(--alt-clr);
+}
+
+/*Responsivitas - Ipad */
+
+@media (max-width: 968px) {
+  .jumbotron-text {
+    position: absolute;
+  }
+
+  .img-hero {
+    width: 100%;
+    left: 25px;
+    top: 30px;
+  }
+
+  .big-text {
+    position: absolute;
+    left: 15px;
+  }
+
+  .top-text {
+    font-size: 5rem;
+  }
+
+  .bottom-text {
+    font-size: 3rem;
+    top: 5rem;
+  }
+
+  .inner-text {
+    margin: 9rem 1rem 0rem;
+  }
+
+  .lead {
+    margin-left: 1rem;
+  }
+
+  .row#row-modified {
+    width: 30rem;
+    margin: auto;
+    padding-left: 3rem;
+  }
+
+  .btn-modified {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+/*Responsivitas - Phone  */
+
+@media (max-width: 700px) {
+  .jumbotron-text {
+    width: 90%;
+    margin: 2rem 1em 2rem;
+  }
+
+  .row#row-modified {
+    width: 30rem;
+    margin: auto;
+    padding-left: 2rem;
+  }
+
+  .text-title#ourproduct {
+    position: absolute;
+    margin-bottom: 3rem;
+  }
+
+  .text-card {
+    width: 100%;
+    margin: 0 2rem 0;
+  }
+
+  .img-hero {
+    left: 0px;
+    top: 100px;
+  }
+
+  .top-text {
+    font-size: 3.3rem;
+    top: 1rem;
+  }
+
+  .bottom-text {
+    font-size: 1.9rem;
+  }
+
+  .img-product {
+    width: 70%;
+  }
+
+  .card-body {
+    width: 70%;
+  }
+
+  .img-product {
+    width: 60%;
+    top: -1rem;
+  }
+
+  .about-text {
+    text-align: center;
+  }
+
+  .btn {
+    display: flex;
+    padding: 0.5rem 0rem 0.5rem;
+    justify-content: center;
+  }
+
+  button {
+    width: 100%;
+  }
+}
+
+@media (max-width: 400px) {
+  .row#row-modified {
+    margin: 0;
+    padding-left: 0;
+  }
+
+  .text-card {
+    margin: 0 1rem 0;
+  }
+}
